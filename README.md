@@ -1,2 +1,2 @@
-# SpringBootOAuthApp
-Simple Spring boot Security with OAuth2- practice project
+# SpringBootResourceServer
+ Spring boot Resource Server  with Spring Security  and OAuth2- practice project 
