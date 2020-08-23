@@ -13,6 +13,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory().withClient("cnoriega").secret("secret")
         .authorizedGrantTypes("authorization_code")
-        .scopes("read").authorities("CLIENT");
+        .scopes("read").authorities("CLIENT").redirectUris("http://localhost:8090/showEmployees");
     }
 }
+
