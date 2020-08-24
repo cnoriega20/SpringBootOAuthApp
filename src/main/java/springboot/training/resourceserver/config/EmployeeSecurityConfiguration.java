@@ -29,6 +29,7 @@ public class EmployeeSecurityConfiguration extends WebSecurityConfigurerAdapter 
     protected void configure(AuthenticationManagerBuilder authenticationMgr) throws Exception {
         authenticationMgr.inMemoryAuthentication()
             .withUser("admin").password("{noop}admin")
-            .authorities("ROLE_ADMIN");
+           .authorities("ROLE_ADMIN");
+           // .roles("ADMIN");
     }
 }
